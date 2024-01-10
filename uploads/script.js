@@ -1,10 +1,8 @@
 const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='; 
-require('dotenv').config();
-
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': process.env.API_KEY,
+    'X-RapidAPI-Key': "81e68ae4e8mshe4f2922c243beb5p15c986jsn6703c710b08f",
     'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
   }
 };
@@ -62,7 +60,7 @@ getweather("Delhi");
 
 // Array of city names for filling datas in the table made below
 const cities = ["Mumbai", "Kolkata", "Bangalore", "Chennai", "Patna", "Kanpur"];
-const delay = 3000;
+const delay = 200;
 //delay for not getting the error of too many requests 
 
 const fillCityWeatherData = async () => {
